@@ -1,0 +1,152 @@
+:root {
+  --green: #00ffc8;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+*{
+  text-decoration: none;
+}
+.navbar{
+  background: rgb(134, 146, 118); 
+  font-family: calibri; 
+  padding-right: 15px; 
+  padding-left: 15px;
+}
+.navdiv{
+  display: flex; 
+  align-items: center; 
+  justify-content:space-between;
+}
+.logo a{
+  font-size: 35px; 
+  font-weight: 600; 
+  color: whitesmoke;
+}
+li{
+  list-style: none; 
+  display: inline-block;
+}
+li a{
+  color: white; 
+  font-size: 20px; 
+  font-weight: bold; 
+  margin-right: 40px;
+}
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: helvetica;
+}
+.btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 35px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh; 
+}
+footer {
+    padding: 0; 
+    margin: 0; 
+    background-color:rgb(99, 89, 89);
+    box-sizing: border-box;
+}
+.site-footer{
+  margin-top: 200px;
+}
+
+.footerBottom{
+    width: 100%; 
+    padding: 0; 
+}
+.socailIcons{
+  display: flex;
+  justify-content: center;
+}
+.socailIcons a{
+  text-decoration: none ;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socailIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+
+.socailIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socailIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: none;
+  letter-spacing: 1px;
+  color: rgb(30, 255, 0);
+  font-weight: 400;
+  margin: 0px 5px;
+}    
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--white);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+.MC ul li{
+  display: block;
+  margin: 10px;
+}
+
+@media (max-width: 700px)
+{
+  .footerBottom ul{
+    flex-direction: column;
+  }
+  .footerBottom ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+  .MC ul{
+    flex-direction:column ;
+  }
+  .MC ul li{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
