@@ -49,9 +49,9 @@ body {
   background-color: var(--btnBg);
 }
 body {
-    display:flex;
-    flex-direction: column;
-    min-height: 50vh; 
+  display:flex;
+  flex-direction: column;
+  min-height: 50vh;
 }
 footer {
     padding: 0; 
@@ -80,7 +80,7 @@ footer {
 }
 
 .socailIcons a i{
-  font-size: 2em;
+  font-size: 2rem;
   color: black;
   opacity: 0.9;
 }
@@ -104,7 +104,7 @@ footer {
   letter-spacing: 1px;
   color: rgb(30, 255, 0);
   font-weight: 400;
-  margin: 0px 5px;
+  margin: 0 5px;
 }    
 li {
   list-style: circle;
