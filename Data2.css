@@ -61,9 +61,11 @@ li a{
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
-.db img{
+img{
+    float: right;
     width: 140px; 
     height: 150px;
+    margin-top: 10px;
 }
 .db h1{
     margin-left: 20px;
@@ -87,6 +89,12 @@ li a{
 }
 @media (max-width: 700px)
 {
+    img{
+       float: center;
+    }
+    .db{
+        margin-top: 175px;
+    }
     .db p{
     flex-direction:column ;
     margin-left: 10px;

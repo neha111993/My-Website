@@ -6,6 +6,26 @@
 *{
   text-decoration: none;
 }
+.light-theme {
+  --bg: var(--green);
+  --fontColor: var(--black);
+  --btnBg: var(--black);
+  --btnFontColor: var(--white);
+}
+.dark-theme {
+  --bg: var(--black);
+  --fontColor: var(--white);
+  --btnBg: var(--white);
+  --btnFontColor: var(--black);
+}
+body {
+  background: var(--bg);
+  color: var(--fontColor);
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+}
 .navbar{
   display: flex; 
   flex-direction: column; 
@@ -24,17 +44,13 @@
   color: whitesmoke;
   text-align: center;
 }
-body {
-  background: var(--bg);
-  color: var(--fontColor);
-  font-family: helvetica;
+.navbar i{
   display: flex;
   flex-direction: column;
-  min-height: 50vh;
-}
-.navbar ul{
-  display: flex;
-  flex-direction: row;
+  position: absolute;
+  top: 12px;
+  right: 60px;
+
 }
 .btn {
   position: absolute;
@@ -48,18 +64,7 @@ body {
   background-color: var(--btnBg);
   cursor: pointer;
 }
-.light-theme {
-  --bg: var(--green);
-  --fontColor: var(--black);
-  --btnBg: var(--black);
-  --btnFontColor: var(--white);
-}
-.dark-theme {
-  --bg: var(--black);
-  --fontColor: var(--white);
-  --btnBg: var(--white);
-  --btnFontColor: var(--black);
-}
+
 h1{
   text-align: center;
   text-decoration: underline;
@@ -87,6 +92,14 @@ h1{
   font-weight: bold; 
   margin-right: 40px;
   color:var(--fontColor);
+}
+.down{
+  margin-top: 180px;
+  cursor: pointer;
+}
+.down a{
+  display: flex;
+  justify-content: center;
 }
 footer{
   background-color:rgb(99, 89, 89);
@@ -139,12 +152,4 @@ footer{
   footer{
     margin-top: 220px;
   }
-  /* .footerBottom ul{
-    flex-direction: column;
-  }
-  .footerBottom ul li{
-    width: 100%;
-    text-align: center;
-    margin: 10px;
-  } */
 }

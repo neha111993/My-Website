@@ -67,13 +67,8 @@ ul li{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px;
+    margin-top: 15px;
     align-items: center;
-}
-ul li a{
-    color: white; 
-    font-size: 20px; 
-    font-weight: bold; 
 }
 @media (max-width: 700px)
 {
@@ -83,6 +78,6 @@ ul li a{
   ul li{
     width: 100%;
     text-align: center;
-    margin: 10px;
+    margin-top: 10px;
   }
 }
