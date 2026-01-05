@@ -60,10 +60,11 @@ li a{
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
-.db img{
+img{
     width:180px; 
     height:200px;
     border-radius: 40px;
+    margin-top: 30px;
     float: right;
 }
 .db h1{
@@ -90,5 +91,9 @@ li a{
         flex-direction:column ;
         width: 100%;
         margin: 10px;
+    }
+    img{
+        float:none;
+        margin-left: 30%;
     }
 }

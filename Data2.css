@@ -90,10 +90,9 @@ img{
 @media (max-width: 700px)
 {
     img{
-       float: center;
-    }
-    .db{
-        margin-top: 175px;
+       float: none;
+       margin-top: 20px;
+       margin-left: 30%;
     }
     .db p{
     flex-direction:column ;
