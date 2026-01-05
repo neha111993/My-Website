@@ -1,58 +1,10 @@
 :root {
-  --green: #00ff9d;
+  --green: #edf7f6;
   --white: #FFFFFF;
   --black: #000000;
 }
 *{
     text-decoration: none;
-}
-.navbar{
-    background: rgb(134, 146, 118); font-family: calibri; padding-right: 15px; padding-left: 15px;
-}
-.navdiv{
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-}
-.logo a{
-    font-size: 35px; 
-    font-weight: 600; 
-    color: whitesmoke;
-}
-li{
-    list-style: none; 
-    display: inline-block;
-}
-li a{
-    color: white; 
-    font-size: 20px; 
-    font-weight: bold; margin-right: 
-    40px;
-}
-body{
-    background: var(--bg);
-    color: var(--fontColor);
-    font-family: helvetica;
-}
-.btn{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    height: 35px;
-    width: 30px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
-}
-.db h2{
-    color: red;
-}
-.db h3{
-    color: blue;
-}
-.db h4{
-    color: blue;
 }
 .light-theme{
     --bg: var(--green);
@@ -66,14 +18,77 @@ body{
   --btnBg: var(--white);
   --btnFontColor: var(--black);
 }
+body{
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+.navbar{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    background: rgb(134, 146, 118); 
+    font-family: calibri; 
+    padding-right: 15px; 
+    padding-left: 15px;
+    margin: -8px;
+}
+.navbar a{
+    font-size: 35px; 
+    font-weight: 600; 
+    color: whitesmoke;
+    text-align: center;
+}
+li{
+    list-style: none; 
+    display: inline-block;
+}
+li a{
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; margin-right: 
+    40px;
+}
+.btn{
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    height: 35px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.db img{
+    width:180px; 
+    height:200px;
+    border-radius: 40px;
+    float: right;
+}
+.db h1{
+    margin-left: 20px;
+}
+.db h2{
+    color: red;
+    margin-left: 20px;
+}
+.db h3{
+    color: var(--fontColor);
+    margin-left: 20px;
+}
+.db h4{
+    color: var(--fontColor);
+    margin-left: 20px;
+}
+.db p{
+    margin-left: 20px;
+}
 @media (max-width: 700px)
 {
-    .db ul{
-    flex-direction:column ;
-}
-.db ul li{
-    width: 100%;
-    text-align: center;
-    margin: 10px;
-}
+    .db p{
+        flex-direction:column ;
+        width: 100%;
+        margin: 10px;
+    }
 }

@@ -1,56 +1,11 @@
 :root {
-  --green: #00ff9d;
+  --green: #edf7f6;
   --white: #FFFFFF;
   --black: #000000;
 }
 
 *{
     text-decoration: none;
-}
-.navbar{
-    background: rgb(134, 146, 118); 
-    font-family: calibri; 
-    padding-right: 15px; 
-    padding-left: 15px;
-}
-.navdiv{
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-}
-.logo a{
-    font-size: 35px; 
-    font-weight: 600; 
-    color: whitesmoke;
-}
-li{
-    list-style: none; 
-    display: inline-block;
-}
-li a{
-    color: white; 
-    font-size: 20px; 
-    font-weight: bold; 
-    margin-right: 40px;
-}
-body{
-    background: var(--bg);
-    color: var(--fontColor);
-    font-family: helvetica;
-}
-.btn{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    height: 35px;
-    width: 30px;
-    border-radius: 50%;
-    border: none;
-    color: var(--btnFontColor);
-    background-color: var(--btnBg);
-}
-.Detail{
-    list-style: square;
 }
 .light-theme{
     --bg: var(--green);
@@ -64,26 +19,68 @@ body{
   --btnBg: var(--white);
   --btnFontColor: var(--black);
 }
-.db{
-    margin-top: 100px;
+body{
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+.navbar{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    background: rgb(134, 146, 118); 
+    font-family: calibri; 
+    padding-right: 15px; 
+    padding-left: 15px;
+    margin: -8px;
+}
+.navbar a{
+    font-size: 35px; 
+    font-weight: 600; 
+    color: whitesmoke;
     text-align: center;
 }
-.Detail a{
-    font-size: large;
-    color: blue;
-    font-style: italic;
-    text-decoration: underline;
+.btn{
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    height: 35px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
 }
-.db ul li{
-    display:block;
+h1{
+    text-align:center;
+    text-decoration: underline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul li{
+    list-style: none; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 10px;
+    align-items: center;
+}
+ul li a{
+    color: white; 
+    font-size: 20px; 
+    font-weight: bold; 
 }
 @media (max-width: 700px)
 {
-    .db ul{
+    ul{
     flex-direction:column ;
   }
-  .db ul li{
+  ul li{
     width: 100%;
     text-align: center;
     margin: 10px;
